@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="myController">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>{{Title}}</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mob.css" rel="stylesheet"/>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128082591-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128082591-1');
+</script>
+
+
+  </head>
+  <body>
+        
+      <!--navigation-->
+      <div ng-include="'navigation.html'"></div>
+      <!--navigation-->      
+      <div class="about-heading-image"> 
+        <img src="img/about.jpg" class="img-responsive" />  
+        <!-- <div class="about-heading-inner">
+            <span class="tooltiptextabout"></span>
+        </div> -->
+      </div>
+      
+      <br class="hidden-xs" /><br class="hidden-xs" />
+      <div class="container-fluid">
+         <div class="row">            
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <table>
+                 <tr>
+                   <td class="about-first-td"><h2 class="founder">The <span class="part-of-heading">Agency</span></h2>  </td>
+                   <td class="about-second-td">
+                      <p class="text-justify">We describe ourselves as a digital house where we offer solutions and services to our clients
+                          to create brand presence over the web that holds true value. We are not pioneers in the
+                          digital stream but we have a strong skilled team with the correct skill set and moreover a
+                          correct attitude that has helped brands in achieving a good web presence. At Now Hatch,
+                          we thrive to create solutions that are visually harmonious and an expression of the
+                          personalities of our clients.</p>
+                       <p class="text-justify">We specialise in delivering social, creative and influencer campaigns for brands in travel,
+                          leisure and hospitality spaces.</p>
+                      <p class="text-justify">
+                          From creative content production to social strategy, digital media buying to influencer
+                          marketing, we blend strategic thinking and creative talent to deliver campaigns with impact.
+                      </p>
+                   </td>
+                 </tr>
+              </table>
+              <br class="hidden-xs" /><br class="hidden-xs" />
+              <table>
+                  <tr>
+                    <td class="about-first-td"><h2 class="founder">Our <span class="part-of-heading">Culture</span></h2></td>
+                    <td class="about-second-td">
+                        <p class="text-justify">
+                            Our culture is built on positive collaboration – with our clients, colleagues and the industry.
+          We attract people that are smart, ambitious and confident that success is never achieved
+          alone.
+                        </p>
+                        <p>
+                            We are respectful, open and non-hierarchical – and we work with clients that are too. We
+                            believe the best outcomes come from strong personal relationships, freedom to innovate,
+                            and attention to detail. We work hard and celebrate often.
+                        </p>
+                    </td>
+                  </tr>
+               </table>
+               <br class="hidden-xs" /><br class="hidden-xs" />
+               <table>
+                  <tr>
+                    <td class="about-first-td"><h2 class="founder">Our <span class="part-of-heading">Approach</span></h2></td>
+                    <td class="about-second-td">
+                        <p class="text-justify">
+                            At #nowhatch we use a tested thought framework to approach all briefs entering the
+                            agency. Our approach focuses on understanding your brand’s audience, developing creative
+                            to transform relationships and selecting channels and partners to target with precision and
+                            at mass.
+                         </p>
+                    </td>
+                  </tr>
+               </table>
+               <br class="hidden-xs" /><br class="hidden-xs" />
+               <table>
+                  <tr>
+                    <td class="about-first-td"><h2 class="founder">Our <span class="part-of-heading">Partners</span></h2> </td>
+                    <td class="about-second-td">
+                        <p class="text-justify">
+                            Partnership is in our DNA. Our Client Partner team sits at the heart of our agency and will be
+                            your first stop when getting to know #nowhatch.
+                         </p>
+                         <p class="text-justify">
+                            We’ve worked equally hard to develop close partnerships with the major players in our field
+                            – we have dedicated account managers throughout the industry, with whom we collaborate
+                            on a daily basis to keep our clients ahead.
+                         </p>
+                    </td>
+                  </tr>
+               </table>                    
+               
+            </div>
+         </div> 
+      </div>
+      <br /><br />
+     
+      <!--footer-->
+      <br class="hidden-xs" /><br class="hidden-xs" />
+        <div ng-include="'footer.html'"></div>
+      <!--footer-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular.js"></script>
+    <script>
+        var text = ["Social Media Management", "Email Marketing", "Search Engine Optimisation", "Media Planning", "Online Reputation Management", "E-Commerce Consulting", "Analytics", "Mobile Marekting"];
+        var counter = 0;
+        var elem = document.getElementById("changeText");
+        var inst = setInterval(change, 2000);
+        
+        function change() {
+          elem.innerHTML = text[counter];
+          counter++;
+          if (counter >= text.length) {
+            counter = 0;
+            // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+          }
+        }
+    </script>
+  </body>
+</html>

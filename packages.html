@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="myController">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>{{Title}}</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mob.css" rel="stylesheet"/>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128082591-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128082591-1');
+</script>
+
+
+  </head>
+  <body>
+        
+      <!--navigation-->
+      <div ng-include="'navigation.html'"></div>
+      <!--navigation-->      
+      <img src="img/packages.jpg" class="img-responsive" />  
+      <div class="container-fluid">
+          <h1>{{mainHeading}}</h1>   
+          <p>
+              We see our customers as invited guests to a party, and we are the hosts. It's our job every day to make every important aspect of the customer experience a little bit better.
+          </p>
+
+          <br /><br />
+          
+          <center><b>Stay tuned for amazing packages!</b></center>
+<!--
+          <div class="row">
+             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+              <div class="packages-div">
+                 <p class="packages-title">Profession</p>
+                 <div class="packages-rupees">
+                   <sup class="rupees-symbol">₹​</sup> <rupees>1260</rupees><sub>/mo<sup>*</sup> </sub>
+                 </div>
+                 <hr />
+                 <div class="after-packages-div">
+                    <ul>
+                      <li>Bulk scheduling</li>
+                      <li>Robust analytics</li>
+                      <li>Unlimited RSS integrations</li>
+                      <li>₹30,000 per month ad spend limit to boost posts</li>
+                    </ul>
+                 </div>
+                    <a class="package-button">Free 30-Day Trial</a>
+              </div>
+             </div>  
+             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="packages-div">
+                   <p class="packages-title">Profession</p>
+                   <div class="packages-rupees">
+                     <sup class="rupees-symbol">₹​</sup> <rupees>1260</rupees><sub>/mo<sup>*</sup> </sub>
+                   </div>
+                   <hr />
+                   <div class="after-packages-div">
+                      <ul>
+                        <li>Bulk scheduling</li>
+                        <li>Robust analytics</li>
+                        <li>Unlimited RSS integrations</li>
+                        <li>₹30,000 per month ad spend limit to boost posts</li>
+                      </ul>
+                   </div>
+                      <a class="package-button">Free 30-Day Trial</a>
+                </div>
+             </div>     
+             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="packages-div">
+                   <p class="packages-title">Profession</p>
+                   <div class="packages-rupees">
+                     <sup class="rupees-symbol">₹​</sup> <rupees>1260</rupees><sub>/mo<sup>*</sup> </sub>
+                   </div>
+                   <hr />
+                   <div class="after-packages-div">
+                      <ul>
+                        <li>Bulk scheduling</li>
+                        <li>Robust analytics</li>
+                        <li>Unlimited RSS integrations</li>
+                        <li>₹30,000 per month ad spend limit to boost posts</li>
+                      </ul>
+                   </div>
+                      <a class="package-button">Free 30-Day Trial</a>
+                </div>
+             </div>   
+             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="packages-div">
+                   <p class="packages-title">Profession</p>
+                   <div class="packages-rupees">
+                     <sup class="rupees-symbol">₹​</sup> <rupees>1260</rupees><sub>/mo<sup>*</sup> </sub>
+                   </div>
+                   <hr />
+                   <div class="after-packages-div">
+                      <ul>
+                        <li>Bulk scheduling</li>
+                        <li>Robust analytics</li>
+                        <li>Unlimited RSS integrations</li>
+                        <li>₹30,000 per month ad spend limit to boost posts</li>
+                      </ul>
+                   </div>
+                      <a class="package-button">Free 30-Day Trial</a>
+                </div>
+             </div>                                     
+            <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <img src="img/packages/1.png" class="img-responsive pricing-img-shadow" />
+            </div> -->
+          </div>
+      
+      </div>
+      <br />
+      <!--footer-->
+        <div ng-include="'footer.html'"></div>
+      <!--footer-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular.js"></script>
+  </body>
+</html>
+
+<!-- https://www.google.com/search?q=pricing+layout&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjUscXKgIjcAhUbVH0KHUiHAPgQ_AUICigB&biw=1366&bih=662#imgrc=6Oy4BTwGyXKknM: -->

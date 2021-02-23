@@ -1,0 +1,196 @@
+@media(max-width:1025px) {
+
+    #myNavbar {
+        float: none;        
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .top-social-links {
+        right: 0;
+        margin-top: 0;
+    }
+
+    .top-social-links > li {
+        margin-right: 0;
+    }
+
+    .inner-shadow {
+        display: none;
+    }
+
+    .first-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .first-td-img {
+        position: relative;
+        width: calc(100% - 20px);
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .second-td-img {
+        position: relative;
+        width: calc(100% - 20px);
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .second-td > img {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .second-table .left-part-td, .second-table .right-part-td {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .left-part-td .first-img {
+        padding: 5px 10px 5px 10px;
+    }
+
+    .second-table .right-part-td .second {
+        padding: 5px 10px 5px 10px;
+    }
+
+    #footer-right, #footer-left {
+        text-align: center;
+    }
+
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: #222;
+    }
+
+    .form-wrapper {
+        background: #e8e8e8;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-top-right-radius: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .address-mail {
+        border-top-right-radius: 0;
+        margin-top: 20px;
+    }
+
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .grid-wrapper .grid-child {
+        margin: 0 0 15px 0;
+        padding: 5px 15px;
+    }
+
+    .grid-wrapper .grid-child > img {
+        display: block;
+        margin: auto;
+    }
+
+    .service-title {
+        font-size: 18px;
+    }
+
+    .navbar-inverse .navbar-toggle {
+        border-color: #ef4036;
+        background: #ef4036;
+    }
+
+    .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+        background-color: transparent;
+    }
+
+    .navbar-inverse .navbar-toggle:focus .icon-bar, .navbar-inverse .navbar-toggle:hover .icon-bar {
+        background-color: #ef4036;
+    }
+
+    .navbar-brand {
+        height: auto;
+        top: 0;
+        position: relative;
+    }
+
+    .navbar-inverse .navbar-toggle {
+        border-color: #ef4036;
+        background: #ef4036;
+        top: 18px;
+        right: 10px;
+    }
+
+} /**************end media query***************/
+
+
+@media(max-width:769px)
+{
+    .padding-left-right {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .padding-left-right-bottom {
+        padding-left: 10px;
+        padding-right: 10px;
+    } 
+
+    .second-table .right-part-td .third {
+        padding: 0;
+    }
+
+    .pop-main-inner {
+        width: auto;        
+        height: 100vh;
+    }
+
+    .pop-main-wrapper {
+        z-index: 1;
+    }
+
+    .pop-main-inner > .pop-mian-wrapper-main-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .paste-ul > .pop-ul-home > li > img {
+        width: 40px;
+        height: auto;
+    }
+
+    .pop-main-inner {
+        margin-top: 0;
+    }
+
+    .close-home-pop {
+        font-size: 24px;
+    }
+
+    .about-first-td, .about-second-td {
+        display: block;
+        width: 100%;
+    }
+
+    .about-first-td {
+        border-right: 0 solid transparent;
+    }
+
+    .founder {
+        margin-top:15px;
+        text-align: left;
+    }
+
+    .about-second-td, .about-first-td {
+        padding: 0;
+    }
+
+    .address-mail {
+        padding-bottom: 20px;
+    }
+}
